@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<script src="vendor/aframe/build/aframe.min.js"></script>
+<!-- include aframe-ar.js -->
+<script src="../build/aframe-ar.js"></script>
+
+<body style='margin : 0px; overflow: hidden; font-family: Monospace;'><div style='position: fixed; top: 10px; width:100%; text-align: center; z-index: 1;'>
+	<a href="https://github.com/jeromeetienne/AR.js/" target="_blank">AR.js</a> - example for a-frame
+	<br/>
+	Contact me any time at <a href='https://twitter.com/jerome_etienne' target='_blank'>@jerome_etienne</a>
+</div>
+	<!-- <a-scene embedded arjs='sourceType: image; sourceUrl:../../data/images/armchair.jpg;'> -->
+	<a-scene embedded arjs='sourceType: webcam;'>
+
+		<a-entity
+      position="0 0.5 0"
+      scale="0.005 0.005 0.005"
+      gltf-model=”url(prebussola/scene.gltf);”>
+      <a-animation
+        attribute="position"
+        dur="1000"
+        from="0 0.5 0"
+        to="0 2 0"
+        repeat="indefinite"
+      ></a-animation>
+
+      </a-entity>
+
+		<a-marker-camera preset='custom' type='pattern' url='https://raw.githubusercontent.com/vettorazi/aframe-gltf-models/master/marker.patt'>
+</a-marker-camera>
+	</a-scene>
+</body>
+</html>
