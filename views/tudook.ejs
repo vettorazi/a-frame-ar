@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<script src="./aframe/dist/aframe-v0.8.0.min.js"></script>
+<script src="./ar/aframe/build/aframe-ar.js"></script>
+
+<body style='margin : 0px; overflow: hidden; font-family: Monospace;'><div style='position: fixed; top: 10px; width:100%; text-align: center; z-index: 1;'>
+	<a href="https://github.com/jeromeetienne/AR.js/" target="_blank">AR.js</a> - example for a-frame
+	<br/>
+	Contact me any time at <a href='https://twitter.com/jerome_etienne' target='_blank'>@jerome_etienne</a>
+</div>
+	<!-- <a-scene embedded arjs='sourceType: image; sourceUrl:../../data/images/armchair.jpg;'> -->
+	<a-scene embedded arjs='sourceType: webcam;'>
+
+		<a-entity
+      position="0 0.1 0"
+      scale="0.002 0.002 0.002"
+      gltf-model=”url(robozinho/scene.gltf);”>
+    <!--  <a-animation
+        attribute="position"
+        dur="1000"
+        from="0 0.1 0"
+        to="0 1 0"
+        repeat="indefinite"
+      ></a-animation>-->
+
+		</a-entity>
+
+		<a-marker-camera preset='custom' type='pattern' url='https://raw.githubusercontent.com/vettorazi/aframe-gltf-models/master/marker.patt'>
+</a-marker-camera>
+	</a-scene>
+</body>
+</html>

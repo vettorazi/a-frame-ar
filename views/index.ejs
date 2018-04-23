@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <script src="./aframe/dist/aframe-v0.8.0.min.js"></script>
+    <script src="./ar/aframe/build/aframe-ar.js"></script>
+  </head>
+  <body>
+    <a-scene embedded arjs ='trackingMethod: best;'>
+    <a-anchor hit-testing-enabled='true'>
+    <a-entity
+      position="0 0.5 0"
+      scale="0.005 0.005 0.005"
+      gltf-model=”url(prebussola/scene.gltf);”>
+      <a-animation
+        attribute="position"
+        dur="1000"
+        from="0 0.5 0"
+        to="0 2 0"
+        repeat="indefinite"
+      ></a-animation>
+
+      </a-entity>
+
+    </a-anchor>
+    <a-marker-camera preset='custom' type='pattern' url='https://raw.githubusercontent.com/vettorazi/aframe-gltf-models/master/marker.patt'>
+</a-marker-camera>
+    </a-scene>
+  </body>
+</html>

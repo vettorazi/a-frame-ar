@@ -1,2 +1,1 @@
-# a-frame-ar
-a-frame app
+# experimentos com realidade aumentada na web. (R.A in the browser)
