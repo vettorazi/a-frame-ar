@@ -9,6 +9,6 @@ router.get('/ok', function(req, res, next) {
   res.render('tudook', { title: 'Express' });
 });
 router.get('/ok2', function(req, res, next) {
-  res.render('tudook-1904', { title: 'Express' });
+  res.render('teste', { title: 'Express' });
 });
 module.exports = router;
