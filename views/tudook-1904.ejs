@@ -4,6 +4,8 @@
 <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
 
 <body style='margin : 0px; overflow: hidden; font-family: Monospace;'>
+	<!-- <a-scene embedded arjs='sourceType: image; sourceUrl:../../data/images/armchair.jpg;'> -->
+	<a-scene embedded arjs='sourceType: webcam;'>
 			 <a-entity
       position="0 0.1 0"
       scale="0.07 0.07 0.07"
@@ -14,6 +16,8 @@
 		 <!-- <a-sky color="#222"></a-sky>
 		 <a-light type="ambient" color="#b6d3d2"></a-light>
   <a-light type="point" intensity="1" position="-3 6 7"></a-light> -->
+		<!-- <a-gltf-model src="robo_blender_final/scene.gltf" position="0 0.1 0" scale="0.05 0.05 0.05" animation-mixer="clip: Take 01" loop:"repeat" visible="" gltf-model="">
+						</a-gltf-model> -->
 
 		<a-marker-camera preset='custom' type='pattern' url='https://raw.githubusercontent.com/vettorazi/aframe-gltf-models/master/markerv8.patt'>
 </a-marker-camera>
